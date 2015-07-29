@@ -3,9 +3,10 @@
     "description": "A utility to display PHP Errors and exceptions in a more readable way. Also adds a JS console.log style PHP output class.",
     "minimum-stability": "stable",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
-            "name":"Jason Watt",
+            "name": "Jason Watt",
             "email": "zanson8@gmail.com"
         }
     ],
@@ -17,5 +18,4 @@
     "require": {
         "php": ">=5.3"
     }
-
 }
