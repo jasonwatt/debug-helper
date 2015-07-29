@@ -1,0 +1,21 @@
+{
+    "name": "zanson/debug-helper",
+    "description": "A utility to display PHP Errors and exceptions in a more readable way. Also adds a JS console.log style PHP output class.",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":"Jason Watt",
+            "email": "zanson8@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Zanson\\DebugHelper\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3"
+    }
+
+}
