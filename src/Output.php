@@ -142,8 +142,6 @@ class Output
         if(is_resource(self::$stdout))
         {
             fwrite(self::$stdout, implode("\n", $args) . ' ' . self::resetColor() . "\n");
-        } else {
-            //error_log(implode("\n", $args) . ' ' . self::resetColor() . "\n");
         }
     }
 

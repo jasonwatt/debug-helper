@@ -241,7 +241,6 @@ class Handler
 
         $backtrace = debug_backtrace();
         array_shift($backtrace);
-        //print_r($backtrace);
         $this->MakePrettyException($backtrace);
         Output::log();
     }
