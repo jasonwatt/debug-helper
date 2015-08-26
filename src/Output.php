@@ -117,6 +117,23 @@ class Output
     }
 
     /**
+     * Allows a string or function call to be prepended to all output.
+     * Good for adding timestamps to output
+     *
+     * @return string|void
+     */
+    private static function getPrepend(){
+        if(is_callable(self::$prepend)){
+            $pre = self::$prepend;
+            return $pre().' ';
+        } else if(!is_null(self::$prepend)){
+            return self::$prepend.' ';
+        } else {
+            return;
+        }
+    }
+
+    /**
      * Main output function
      */
     public static function write() {
